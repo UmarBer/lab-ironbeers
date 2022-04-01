@@ -1,8 +1,6 @@
 <div>
   {{#each data}}
-    <h2> {{name}}</h2>
-    <img src='{{image_url}}' alt='{{tagline}}' />
-    <p> {{description}} </p>
+    {{> beerpartial}}
     <p> {{food_pairing}}</p>
     <p> {{brewers_tips}}</p>
   {{/each}}
